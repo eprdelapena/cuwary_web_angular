@@ -1,0 +1,57 @@
+<form class="space-y-4">
+
+
+
+
+
+    <div class="relative">
+        <lucide-angular [img]="Mail"
+            class="absolute text-black left-[0.4em] top-[0.43em] w-5 h-5 text-muted-foreground" />
+        <input type="email" placeholder="Enter your email" class="w-full pl-10 pr-4 py-2.5
+  bg-gray-200 border border-gray-300
+  rounded-lg focus:outline-none
+  focus:ring-1 text-black focus:ring-primary/50
+  focus:border-transparent transition-colors" />
+    </div>
+
+
+
+    <div class="relative">
+        <lucide-angular [img]="Lock"
+            class="absolute text-black left-[0.4em] top-[0.43em] w-5 h-5 text-muted-foreground" />
+        <input type="password" placeholder="Create a password" class="w-full pl-10 pr-4 py-2.5
+  bg-gray-200 border border-gray-300
+  rounded-lg focus:outline-none
+  focus:ring-1 text-black focus:ring-primary/50
+  focus:border-transparent transition-colors" />
+    </div>
+
+
+    <div class="relative">
+        <lucide-angular [img]="Lock"
+            class="absolute text-black left-[0.4em] top-[0.43em] w-5 h-5 text-muted-foreground" />
+        <input type="password" placeholder="Re-type password" class="w-full pl-10 pr-4 py-2.5
+  bg-gray-200 border border-gray-300
+  rounded-lg focus:outline-none
+  focus:ring-1 text-black focus:ring-primary/50
+  focus:border-transparent transition-colors" />
+    </div>
+
+
+
+
+
+    <div class="flex items-center gap-2">
+        <input type="checkbox" id="terms" class="w-4 h-4 rounded border-border bg-muted cursor-pointer" />
+        <label htmlFor="terms" class="text-muted-foreground text-slate-500 text-sm cursor-pointer">
+            I agree to the
+            <a href="#" class="text-primary text-slate-500 hover:underline font-medium">
+                Terms & Conditions
+            </a>
+        </label>
+    </div>
+    <button type="submit"
+        class="w-full h-11 bg-primary text-white bg-blue-800 text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors mt-2">
+        Create Account
+    </button>
+</form>

@@ -1,0 +1,7 @@
+enum E_URL_ROUTES {
+    LOGIN = "LOGIN",
+    REGISTER = "REGISTER",
+    FORGOT_PASSWORD = "FORGOT_PASSWORD"
+}
+
+export default E_URL_ROUTES
