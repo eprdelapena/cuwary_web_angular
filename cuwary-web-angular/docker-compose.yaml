@@ -1,0 +1,26 @@
+version: '3'
+services:
+  web:
+    image: image-cuwary-web-angular
+    container_name: container-cuwary-web-angular
+    ports:
+      - '4200:4200'
+    volumes:
+      - '.:/app'
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - network-cuwary-web-angular
+      
+    develop:
+      watch:
+        - path: ./package.json
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+
+networks:
+  network-cuwary-web-angular:
+    driver: bridge
+
+    #need to create your network first
