@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/auth/login/login.component';
-import { RegisterComponent } from './pages/auth/register/register.component';
-import { ForgotPasswordComponent } from './pages/auth/forgot-password/forgot-password.component';
+import { LoginComponent } from './features/login/login.component';
+import { RegisterComponent } from './features/register/register.component';
+import { ForgotPasswordComponent } from './features/forgot-password/forgot-password.component';
 import CONS_URL_ROUTES from './shared/constant/constant.routes';
 
 
